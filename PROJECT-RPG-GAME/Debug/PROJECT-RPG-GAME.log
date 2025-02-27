@@ -1,13 +1,11 @@
 ﻿  PROJECT-RPG-GAME.cpp
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(10,49): warning C4244: аргумент: преобразование "const float" в "unsigned int", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(10,35): warning C4244: аргумент: преобразование "const float" в "unsigned int", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(23,20): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(35,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(36,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(41,29): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(42,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(47,33): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(48,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(53,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(54,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(22,20): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(34,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(35,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(40,29): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(41,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(46,33): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(47,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(52,32): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\PROJECT-RPG-GAME.cpp(53,27): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
   PROJECT-RPG-GAME.vcxproj -> C:\Users\varya\source\repos\PROJECT-RPG-GAME\Debug\PROJECT-RPG-GAME.exe
