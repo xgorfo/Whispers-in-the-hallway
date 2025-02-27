@@ -15,7 +15,7 @@ void Game::initWindow() {
 
 Game::Game() {
 
-
+    this->initWindow();
 }
 
 Game::~Game() {
@@ -25,21 +25,42 @@ Game::~Game() {
 
 }
 
+void Game::updateframe() {
+
+    //Обновляет кадровые переменные с временем берущим обновления и рендер одним кадром
+
+    this->frame = this->frameClock.restart().asSeconds();
+
+    system("cls");
+    std::cout << this->frame << "\n";
+
+}
+
 
 //Функции
 
+
 void Game::updateSMFLEvents() {
 
-
+    while (this->window->pollEvent(this->sfEvent)) {
+        if (this->sfEvent.type == Event::Closed)
+            this->window->close();
+    }
 }
 
 void Game::update() {
 
+    this->updateSMFLEvents();
 
 }
 
 void Game::render() {
 
+    this->window->clear();
+
+    //Рендер вещей
+
+    this->window->display();
 
 }
 
@@ -59,6 +80,7 @@ void Game::run() {
 
     while (this->window->isOpen()) {
 
+        this->updateframe();
         this->update();
         this->render();
         //float time = clock.getElapsedTime().asMicroseconds();

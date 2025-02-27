@@ -10,6 +10,7 @@
 #include <windows.h>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 using namespace sf;
 
@@ -21,6 +22,9 @@ private:
 	//Переменные
 	RenderWindow *window;
 	Event sfEvent;
+
+	Clock frameClock;
+	float frame;
 
 	//Иницаиализированные функции
 
@@ -34,7 +38,7 @@ public:
 
 	//Функции
 
-
+	void updateframe();
 	void updateSMFLEvents();
 	void update();
 	void render();
