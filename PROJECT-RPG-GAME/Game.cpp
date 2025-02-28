@@ -1,7 +1,7 @@
 #include "Game.h"
 using namespace sf;
 
-//Статичные функции
+//Static functions
 
 //Иницаиализированные функции
 
@@ -31,8 +31,8 @@ void Game::updateframe() {
 
     this->frame = this->frameClock.restart().asSeconds();
 
-    system("cls");
-    std::cout << this->frame << "\n";
+    //system("cls");
+    //std::cout << this->frame << "\n";
 
 }
 
