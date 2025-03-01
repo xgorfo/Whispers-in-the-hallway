@@ -1,7 +1,7 @@
 #include "State.h"
 
-State::State() {
-
+State::State(RenderWindow* window) {
+	this->window = window;
 
 }
 

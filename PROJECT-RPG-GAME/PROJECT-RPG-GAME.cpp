@@ -1,4 +1,5 @@
 ﻿#include "Game.h"
+#include <map>
 
 using namespace sf;
 

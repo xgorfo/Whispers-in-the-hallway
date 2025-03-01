@@ -1,23 +1,23 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "GameState.h"
 #include "State.h"
+#include <stack>
 
 using namespace sf;
-
-
 
 class Game
 {
 private:
 	//Variables
-	RenderWindow *window;
+	sf::RenderWindow *window;
 	Event sfEvent;
 
 	Clock frameClock;
 	float frame;
 
-	stack<State*> states;
+	std::stack<State*> states;
 
 	//Initialized functions
 

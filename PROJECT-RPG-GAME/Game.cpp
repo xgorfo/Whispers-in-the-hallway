@@ -32,7 +32,7 @@ void Game::initWindow() {
 
 void Game::initStates(){
 
-    //this->states.push(new Game_State);
+    //this->states.push(new GameState(this->window));
 }
 
 //Constructors/Destructors
@@ -41,12 +41,16 @@ void Game::initStates(){
 Game::Game() {
 
     this->initWindow();
+    this->initStates();
 }
 
 Game::~Game() {
 
 	delete this->window;
-
+    while (this->states.empty()) {
+        delete this->states.top();
+        this->states.pop();
+    }
 
 }
 
@@ -76,6 +80,8 @@ void Game::updateSMFLEvents() {
 void Game::update() {
 
     this->updateSMFLEvents();
+    if (!this->states.empty())
+        this->states.top()->update(this->frame);
 
 }
 

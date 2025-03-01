@@ -9,15 +9,16 @@ private:
     
 
 public:
-    GameState();
+    GameState(sf::RenderWindow* window);
     virtual ~GameState();
 
 
     //Functions
+    void endState();
 
 
-    void update();
-    void render();
+    void update(const float& frame);
+    void render(sf::RenderTarget* target = nullptr);
 
     
 };
