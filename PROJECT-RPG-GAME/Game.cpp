@@ -3,14 +3,39 @@ using namespace sf;
 
 //Static functions
 
-//Иницаиализированные функции
+//Initialized functions
 
 void Game::initWindow() {
 
-	this -> window = new RenderWindow(VideoMode(200, 200), "GAME-PROJECT-RPG");
+    ifstream ifs("Condig.txt");
+
+    // string title = " ";
+    VideoMode window_bounds(800, 600);
+    unsigned framerate_limit = 60;
+    bool vertical_sync = false;
+
+    if (ifs.is_open()) {
+
+       // getline(ifs, title);
+        ifs >> window_bounds.width >> window_bounds.height;
+        ifs >> framerate_limit;
+        ifs >> vertical_sync;
+
+    }
+
+    ifs.close();
+
+    this->window = new RenderWindow(window_bounds, "Whispers in the hallway");
+    this->window->setFramerateLimit(framerate_limit);
+    this->window->setVerticalSyncEnabled(vertical_sync);
 }
 
-//Конструкторы/Деструкторы
+void Game::initStates(){
+
+    //this->states.push(new Game_State);
+}
+
+//Constructors/Destructors
 
 
 Game::Game() {
@@ -27,7 +52,7 @@ Game::~Game() {
 
 void Game::updateframe() {
 
-    //Обновляет кадровые переменные с временем берущим обновления и рендер одним кадром
+    //Updates frame variables with time taking updates and rendering in one frame
 
     this->frame = this->frameClock.restart().asSeconds();
 
@@ -37,7 +62,7 @@ void Game::updateframe() {
 }
 
 
-//Функции
+//Functions
 
 
 void Game::updateSMFLEvents() {
@@ -58,7 +83,10 @@ void Game::render() {
 
     this->window->clear();
 
-    //Рендер вещей
+    //Rendering of things
+
+    if (this->states.empty())
+        this->states.top()->render();
 
     this->window->display();
 
@@ -83,6 +111,9 @@ void Game::run() {
         this->updateframe();
         this->update();
         this->render();
+
+
+
         //float time = clock.getElapsedTime().asMicroseconds();
         //clock.restart();
 

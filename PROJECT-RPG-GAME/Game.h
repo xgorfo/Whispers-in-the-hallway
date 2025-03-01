@@ -1,16 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Network.hpp>
-
-#include <windows.h>
-#include <cstdlib>
-#include <ctime>
-#include <iostream>
+#include "State.h"
 
 using namespace sf;
 
@@ -19,16 +10,19 @@ using namespace sf;
 class Game
 {
 private:
-	//Переменные
+	//Variables
 	RenderWindow *window;
 	Event sfEvent;
 
 	Clock frameClock;
 	float frame;
 
-	//Иницаиализированные функции
+	stack<State*> states;
+
+	//Initialized functions
 
 	void initWindow();
+	void initStates();
 
 
 public:
@@ -36,7 +30,7 @@ public:
 	Game();
 	virtual ~Game();
 
-	//Функции
+	//Functions
 
 	void updateframe();
 	void updateSMFLEvents();
