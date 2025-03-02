@@ -18,7 +18,7 @@ public:
 
 
     void update(const float& frame);
-    void render();
+    void render(sf::RenderTarget* target = nullptr);
 
     
 };

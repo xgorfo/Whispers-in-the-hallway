@@ -32,7 +32,7 @@ void Game::initWindow() {
 
 void Game::initStates(){
 
-    this->states.push(new GameState(this->window));
+    //this->states.push(new GameState(this->window));
 }
 
 //Constructors/Destructors
@@ -91,7 +91,7 @@ void Game::render() {
 
     //Rendering of things
 
-    if (!this->states.empty())
+    if (this->states.empty())
         this->states.top()->render();
 
     this->window->display();
