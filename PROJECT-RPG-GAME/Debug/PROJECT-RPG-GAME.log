@@ -1,4 +1,6 @@
-﻿  Game.cpp
+﻿  Character.cpp
+  Constants.cpp
+  Game.cpp
   GameState.cpp
   PROJECT-RPG-GAME.cpp
   Создание кода...

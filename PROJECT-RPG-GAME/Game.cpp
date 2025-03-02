@@ -9,14 +9,14 @@ void Game::initWindow() {
 
     ifstream ifs("Config.txt");
 
-    // string title = " ";
+    string title = "Whispers in the hallway";
     VideoMode window_bounds(800, 600);
     unsigned framerate_limit = 60;
     bool vertical_sync = false;
 
     if (ifs.is_open()) {
 
-       // getline(ifs, title);
+        getline(ifs, title);
         ifs >> window_bounds.width >> window_bounds.height;
         ifs >> framerate_limit;
         ifs >> vertical_sync;
@@ -25,7 +25,7 @@ void Game::initWindow() {
 
     ifs.close();
 
-    this->window = new RenderWindow(window_bounds, "Whispers in the hallway");
+    this->window = new RenderWindow(window_bounds, title);
     this->window->setFramerateLimit(framerate_limit);
     this->window->setVerticalSyncEnabled(vertical_sync);
 }

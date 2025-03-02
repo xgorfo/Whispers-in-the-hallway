@@ -1,4 +1,4 @@
-SFML C++ RPG
+Whispers in the hallway
 800 600
-120
+60
 0
