@@ -17,3 +17,7 @@ void GameState::update(const float& frame){
 void GameState::render(RenderTarget* target) {
 
 }
+
+void GameState::endState() {
+
+}

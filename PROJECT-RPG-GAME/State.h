@@ -30,8 +30,8 @@ private:
 
 
 public:
-	State(sf::RenderWindow* window);
-	virtual ~State();
+	State(sf::RenderWindow* window) {}
+	virtual ~State() {}
 
 	virtual void endState() = 0;
 

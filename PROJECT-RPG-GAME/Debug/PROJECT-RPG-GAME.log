@@ -1,10 +1,7 @@
-﻿  Game.cpp
-  GameState.cpp
+﻿  GameState.cpp
 C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\Game.h(20,13): error C2065: State: необъявленный идентификатор
   (компиляция исходного файла "GameState.cpp")
   
 C:\Users\varya\source\repos\PROJECT-RPG-GAME\PROJECT-RPG-GAME\Game.h(20,19): error C2059: синтаксическая ошибка: >
   (компиляция исходного файла "GameState.cpp")
   
-  PROJECT-RPG-GAME.cpp
-  Создание кода...

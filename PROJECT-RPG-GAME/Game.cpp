@@ -7,7 +7,7 @@ using namespace sf;
 
 void Game::initWindow() {
 
-    ifstream ifs("Condig.txt");
+    ifstream ifs("Config.txt");
 
     // string title = " ";
     VideoMode window_bounds(800, 600);
